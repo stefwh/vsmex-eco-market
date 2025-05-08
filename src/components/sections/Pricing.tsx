@@ -1,16 +1,15 @@
 
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Pricing = () => {
+  
   const pricingPlans = [
     {
-      name: "Standard",
-      description: "Unser Basis-Template für VSME-Reporting, perfekt für Einsteiger",
-      price: 49,
+      name: "Basic",
+      description: "Perfect for small businesses just starting with VSME reporting",
+      price: 89,
       features: [
         "Komplettes VSME-Reporting Template",
         "Grundlegende Dashboards",
@@ -22,9 +21,10 @@ const Pricing = () => {
       ctaText: "Jetzt kaufen",
     },
     {
-      name: "Premium",
-      description: "Umfassendes Template mit erweiterten Funktionen für professionelles VSME-Reporting",
-      price: 89,
+
+      name: "Extended",
+      description: "Ideal for growing companies seeking comprehensive VSME solutions",
+      price: 149,
       features: [
         "Alles aus dem Standard-Paket",
         "Erweiterte Dashboards & Visualisierung",
@@ -45,9 +45,9 @@ const Pricing = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Einfache, transparente Preise</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Simple, Transparent Pricing</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Wählen Sie das Paket, das zu Ihren VSME-Reporting Anforderungen passt
+          Choose the plan that fits your organization's VSME reporting needs
           </p>
           <Link to="/pricing">
             <Button variant="outline" className="rounded-lg">
@@ -76,9 +76,9 @@ const Pricing = () => {
                 <p className="text-muted-foreground mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2 mb-6">
                   <span className="text-4xl font-bold">
-                    €{plan.price}
+                  €{plan.price}
                   </span>
-                  <span className="text-muted-foreground mb-1">einmalig</span>
+                  <span className="text-muted-foreground mb-1">single-pay</span>
                 </div>
                 
                 <Link to="/checkout">

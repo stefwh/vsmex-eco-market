@@ -1,12 +1,10 @@
 
-import React from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, DollarSign } from 'lucide-react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const PricingPage = () => {
   const pricingPlans = [
@@ -239,5 +237,5 @@ const PricingPage = () => {
     </div>
   );
 };
-
 export default PricingPage;
+
