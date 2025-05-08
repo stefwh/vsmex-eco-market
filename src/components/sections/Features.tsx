@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 const Features = () => {
   const features = [
     {
-      title: "Comprehensive ESG Framework",
+      title: "Comprehensive VSME Framework",
       description: "Built-in structure covering all essential Environmental, Social, and Governance metrics for VSMEs.",
       icon: (
         <svg className="h-10 w-10 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +15,7 @@ const Features = () => {
     },
     {
       title: "Ready-Made Dashboards",
-      description: "Beautiful dashboards that visualize your ESG metrics with clear, understandable graphics.",
+      description: "Beautiful dashboards that visualize your VSME metrics with clear, understandable graphics.",
       icon: (
         <svg className="h-10 w-10 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 13V17M16 11V17M12 7V17M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -69,9 +69,9 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Comprehensive ESG Reporting Solution</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Comprehensive VSME Reporting Solution</h2>
           <p className="text-lg text-muted-foreground">
-            Our Notion template provides everything VSMEs need to track, document, and report on their ESG initiatives.
+            Our Notion template provides everything VSMEs need to track, document, and report on their VSME initiatives.
           </p>
         </div>
         
@@ -92,15 +92,18 @@ const Features = () => {
         
         {/* Benefits section */}
         <div className="mt-20 lg:mt-32 max-w-4xl mx-auto bg-secondary rounded-2xl p-8 md:p-12 shadow-subtle">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Why Choose Our ESG Template?</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Why Choose Our VSME Template?</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Save 20+ hours on ESG reporting setup",
-              "Ensure compliance with EU CSRD guidelines",
+              "Save 20+ hours on VSME reporting setup",
+              "Ensure compliance readiness with EU CSRD guidelines",
               "Track progress against sustainability goals",
               "Impress investors with professional reports",
-              "Simplify data collection and management",
+              "Simplify complex sustainability reporting",
               "Adapt to your organization's specific needs",
+              "Boost credibility with stakeholders",
+              "Save the costs for an expensive consultant",
+              "Enhance internal collaboration, working together on one template",
               "Visualize improvements over time",
               "No technical expertise required"
             ].map((benefit, index) => (

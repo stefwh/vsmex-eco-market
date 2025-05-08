@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-xl font-bold text-primary">ESG</span>
+            <span className="text-xl font-bold text-primary">VSME</span>
             <span className="ml-1 text-xl font-light">Template</span>
           </Link>
 

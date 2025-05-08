@@ -8,15 +8,17 @@ import { CheckCircle, Download, FileText, ShoppingCart } from 'lucide-react';
 
 const Product = () => {
   const features = [
-    "Comprehensive ESG reporting framework for VSMEs",
+    "Comprehensive VSME reporting framework for VSMEs",
     "Pre-built dashboards for environmental metrics",
+    "Cost efficiency without expensive Consultant",
     "Social responsibility tracking templates",
     "Governance documentation systems",
     "Automated data visualization",
     "Compliance checklist for EU regulations",
     "Stakeholder communication templates",
     "Regular updates as regulations change",
-    "Easy data export for external reporting"
+    "Easy data export for external reporting with PDF",
+    "Co-working on one single template",
   ];
 
   return (
@@ -27,13 +29,13 @@ const Product = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-full text-sm font-medium mb-4">
-                VSME ESG Solution
+                VSME Solution
               </span>
               <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                Notion Template for VSME ESG Reporting
+                Notion Template for VSME Reporting
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                The all-in-one solution for small and medium enterprises to meet ESG reporting requirements
+                The all-in-one solution for small and medium enterprises to meet VSME reporting requirements
                 without the complexity or high costs.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -61,7 +63,7 @@ const Product = () => {
                   <div className="rounded-2xl overflow-hidden shadow-glass">
                     <img
                       src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                      alt="ESG Template Dashboard"
+                      alt="VSME Template Dashboard"
                       className="w-full h-auto"
                     />
                   </div>
@@ -89,7 +91,7 @@ const Product = () => {
                 <h2 className="text-2xl font-semibold mb-6">Product Details</h2>
                 <p className="text-lg mb-8">
                   Our comprehensive Notion template is designed specifically for Very Small and Medium-sized Enterprises (VSMEs) 
-                  looking to implement effective ESG (Environmental, Social, and Governance) reporting. 
+                  looking to implement effective VSME (Environmental, Social, and Governance) reporting. 
                   This ready-to-use solution simplifies the complex world of sustainability reporting, 
                   making it accessible and manageable for businesses of all sizes.
                 </p>
@@ -125,7 +127,7 @@ const Product = () => {
                     </div>
                     <div>
                       <h4 className="font-medium">Documentation Guide</h4>
-                      <p className="text-muted-foreground">Detailed setup and usage instructions to help you get started quickly.</p>
+                      <p className="text-muted-foreground">Detailed setup and usage instructions to help you get started quickly through documentation and video.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
@@ -164,7 +166,9 @@ const Product = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div><span style={{ color: 'red', fontWeight: 'bold' }}>
+            An overview video will be placed here somewhere after all the stuff:
+</span>
           </div>
         </div>
       </main>

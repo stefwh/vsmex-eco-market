@@ -19,13 +19,13 @@ const Hero = () => {
           {/* Content */}
           <div className="lg:w-1/2 space-y-6 animate-fade-in">
             <div className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-primary">
-              ESG Reporting Made Simple
+              VSME Reporting Made Simple
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              Streamline Your ESG Reporting with Our Notion Template
+              Streamline Your VSME Reporting with Our Notion Template
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              The ultimate Notion template for VSMEs to meet compliance standards, showcase sustainability efforts, and simplify ESG reporting.
+              <strong>Iiris' super duper crazy notion template: </strong>The ultimate Notion template for VSMEs to meet compliance standards, showcase sustainability efforts, and simplify VSME reporting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/product">
@@ -45,7 +45,7 @@ const Hero = () => {
                 <svg className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Instant download after purchase
+                Instant usage after purchase
               </span>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Hero = () => {
               <div className="glass-panel p-2 border border-white/30 shadow-glass-hover">
                 <img
                   src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                  alt="ESG Template Dashboard"
+                  alt="VSME Template Dashboard"
                   className="w-full h-auto rounded-xl shadow-subtle"
                 />
               </div>

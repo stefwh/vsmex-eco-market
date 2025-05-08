@@ -8,8 +8,8 @@ import BlogCard from '../ui/BlogCard';
 const blogPosts = [
   {
     id: 1,
-    title: "ESG Reporting Requirements for VSMEs in 2023",
-    excerpt: "An overview of the latest ESG reporting requirements that small and medium enterprises need to be aware of.",
+    title: "VSME Reporting Requirements for VSMEs in 2023",
+    excerpt: "An overview of the latest VSME reporting requirements that small and medium enterprises need to be aware of.",
     date: "June 15, 2023",
     category: "Compliance",
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
@@ -26,7 +26,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "How to Communicate Your ESG Efforts to Stakeholders",
+    title: "How to Communicate Your VSME Efforts to Stakeholders",
     excerpt: "Effective communication strategies to showcase your sustainability initiatives to investors, customers, and employees.",
     date: "April 12, 2023",
     category: "Communication",
@@ -41,9 +41,9 @@ const Blog = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">ESG Insights</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">VSME Insights</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Stay informed with our latest articles on ESG reporting, sustainability, and compliance.
+              Stay informed with our latest articles on VSME reporting, sustainability, and compliance.
             </p>
           </div>
           <Link to="/blog" className="mt-6 md:mt-0">

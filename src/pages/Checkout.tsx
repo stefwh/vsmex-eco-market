@@ -213,12 +213,12 @@ const Checkout = () => {
                   <div className="h-16 w-16 rounded-lg overflow-hidden bg-white">
                     <img 
                       src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                      alt="ESG Template" 
+                      alt="VSME Template" 
                       className="h-full w-full object-cover"
                     />
                   </div>
                   <div>
-                    <h3 className="font-medium">VSME ESG Reporting Template</h3>
+                    <h3 className="font-medium">VSME VSME Reporting Template</h3>
                     <p className="text-sm text-muted-foreground">Notion Template</p>
                   </div>
                 </div>

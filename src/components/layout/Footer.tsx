@@ -12,11 +12,11 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-primary">ESG</span>
+              <span className="text-xl font-bold text-primary">VSME</span>
               <span className="ml-1 text-xl font-light">Template</span>
             </Link>
             <p className="mt-4 text-muted-foreground max-w-md">
-              Simplify your ESG reporting with our premium Notion template designed specifically for VSMEs.
+              Simplify your VSME reporting with our premium Notion template designed specifically for VSMEs.
               Meet compliance standards and showcase your sustainability efforts with ease.
             </p>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} ESG Template. All rights reserved.
+            © {currentYear} VSME Template. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

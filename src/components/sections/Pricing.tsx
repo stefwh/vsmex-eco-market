@@ -11,11 +11,11 @@ const Pricing = () => {
   const pricingPlans = [
     {
       name: "Standard",
-      description: "Perfect for small businesses just starting with ESG reporting",
+      description: "Perfect for small businesses just starting with VSME reporting",
       monthlyPrice: 49,
       annualPrice: 39,
       features: [
-        "Complete ESG reporting template",
+        "Complete VSME reporting template",
         "Basic dashboards",
         "Standard metrics tracking",
         "Email support",
@@ -26,7 +26,7 @@ const Pricing = () => {
     },
     {
       name: "Premium",
-      description: "Ideal for growing companies seeking comprehensive ESG solutions",
+      description: "Ideal for growing companies seeking comprehensive VSME solutions",
       monthlyPrice: 89,
       annualPrice: 69,
       features: [
@@ -39,22 +39,6 @@ const Pricing = () => {
       ],
       isPopular: true,
       ctaText: "Get Premium",
-    },
-    {
-      name: "Enterprise",
-      description: "For organizations requiring advanced ESG management tools",
-      monthlyPrice: 149,
-      annualPrice: 129,
-      features: [
-        "Everything in Premium",
-        "Executive summary dashboard",
-        "Stakeholder reporting templates",
-        "Advanced compliance documentation",
-        "Implementation consultation",
-        "10 user licenses",
-      ],
-      isPopular: false,
-      ctaText: "Contact Sales",
     }
   ];
 
@@ -67,7 +51,7 @@ const Pricing = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Simple, Transparent Pricing</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Choose the plan that fits your organization's ESG reporting needs
+            Choose the plan that fits your organization's VSME reporting needs
           </p>
           
           {/* Pricing toggle */}
@@ -145,7 +129,7 @@ const Pricing = () => {
         
         <div className="mt-16 lg:mt-20 text-center">
           <p className="text-muted-foreground mb-6">
-            Need a custom solution? We can help!
+            You still have questions?
           </p>
           <Button variant="outline" className="rounded-full px-8">
             Contact Us
