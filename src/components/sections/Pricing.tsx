@@ -1,44 +1,40 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Pricing = () => {
-  const [isAnnual, setIsAnnual] = useState(true);
-  
   const pricingPlans = [
     {
       name: "Standard",
-      description: "Perfect for small businesses just starting with VSME reporting",
-      monthlyPrice: 49,
-      annualPrice: 39,
+      description: "Unser Basis-Template für VSME-Reporting, perfekt für Einsteiger",
+      price: 49,
       features: [
-        "Complete VSME reporting template",
-        "Basic dashboards",
-        "Standard metrics tracking",
-        "Email support",
-        "1 user license",
+        "Komplettes VSME-Reporting Template",
+        "Grundlegende Dashboards",
+        "Standard Metrik-Tracking",
+        "E-Mail Support",
+        "1 Benutzer-Lizenz",
       ],
       isPopular: false,
-      ctaText: "Get Started",
+      ctaText: "Jetzt kaufen",
     },
     {
       name: "Premium",
-      description: "Ideal for growing companies seeking comprehensive VSME solutions",
-      monthlyPrice: 89,
-      annualPrice: 69,
+      description: "Umfassendes Template mit erweiterten Funktionen für professionelles VSME-Reporting",
+      price: 89,
       features: [
-        "Everything in Standard",
-        "Advanced dashboards & visualization",
-        "Custom metrics setup",
-        "Compliance documentation templates",
-        "Priority email support",
-        "3 user licenses",
+        "Alles aus dem Standard-Paket",
+        "Erweiterte Dashboards & Visualisierung",
+        "Benutzerdefinierte Metrik-Einrichtung",
+        "Compliance-Dokumentvorlagen",
+        "Prioritäts-E-Mail-Support",
+        "3 Benutzer-Lizenzen",
       ],
       isPopular: true,
-      ctaText: "Get Premium",
+      ctaText: "Premium kaufen",
     }
   ];
 
@@ -49,35 +45,18 @@ const Pricing = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Simple, Transparent Pricing</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Einfache, transparente Preise</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Choose the plan that fits your organization's VSME reporting needs
+            Wählen Sie das Paket, das zu Ihren VSME-Reporting Anforderungen passt
           </p>
-          
-          {/* Pricing toggle */}
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <span className={`text-sm font-medium ${isAnnual ? 'text-primary' : 'text-muted-foreground'}`}>
-              Annual <span className="text-green-500 font-semibold">(20% off)</span>
-            </span>
-            <button
-              onClick={() => setIsAnnual(!isAnnual)}
-              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                isAnnual ? 'bg-primary' : 'bg-muted-foreground'
-              }`}
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  isAnnual ? 'translate-x-6' : 'translate-x-1'
-                }`}
-              />
-            </button>
-            <span className={`text-sm font-medium ${!isAnnual ? 'text-primary' : 'text-muted-foreground'}`}>
-              Monthly
-            </span>
-          </div>
+          <Link to="/pricing">
+            <Button variant="outline" className="rounded-lg">
+              Alle Details anzeigen
+            </Button>
+          </Link>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
@@ -90,16 +69,16 @@ const Pricing = () => {
               <div className="bg-white p-8">
                 {plan.isPopular && (
                   <div className="bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider rounded-full px-3 py-1 inline-block mb-4">
-                    Most Popular
+                    Meistverkauft
                   </div>
                 )}
                 <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
                 <p className="text-muted-foreground mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2 mb-6">
                   <span className="text-4xl font-bold">
-                    ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                    €{plan.price}
                   </span>
-                  <span className="text-muted-foreground mb-1">/month</span>
+                  <span className="text-muted-foreground mb-1">einmalig</span>
                 </div>
                 
                 <Link to="/checkout">
@@ -113,7 +92,7 @@ const Pricing = () => {
               </div>
               
               <div className="bg-gray-50 p-8">
-                <h4 className="font-medium mb-4">What's included:</h4>
+                <h4 className="font-medium mb-4">Was ist enthalten:</h4>
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -129,10 +108,10 @@ const Pricing = () => {
         
         <div className="mt-16 lg:mt-20 text-center">
           <p className="text-muted-foreground mb-6">
-            You still have questions?
+            Sie haben noch Fragen?
           </p>
           <Button variant="outline" className="rounded-full px-8">
-            Contact Us
+            Kontaktieren Sie uns
           </Button>
         </div>
       </div>
