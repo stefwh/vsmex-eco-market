@@ -10,62 +10,62 @@ const PricingPage = () => {
   const pricingPlans = [
     {
       name: "Standard",
-      description: "Unser Basis-Template für VSME-Reporting, perfekt für Einsteiger",
+      description: "Our base template for VSME reporting, perfect for beginners",
       price: 49,
       features: [
-        "Komplettes VSME-Reporting Template",
-        "Grundlegende Dashboards",
-        "Standard Metrik-Tracking",
-        "E-Mail Support",
-        "1 Benutzer-Lizenz",
-        "30 Tage Geld-zurück-Garantie",
-        "Lebenslanger Zugang",
-        "Kostenlose Updates für 1 Jahr"
+        "Complete VSME reporting template",
+        "Basic dashboards",
+        "Standard metric tracking",
+        "Email support",
+        "1 user license",
+        "30-day money-back guarantee",
+        "Lifetime access",
+        "Free updates for 1 year"
       ],
       isPopular: false,
-      ctaText: "Jetzt kaufen",
+      ctaText: "Buy Now",
     },
     {
       name: "Premium",
-      description: "Umfassendes Template mit erweiterten Funktionen für professionelles VSME-Reporting",
+      description: "Comprehensive template with advanced features for professional VSME reporting",
       price: 89,
       features: [
-        "Alles aus dem Standard-Paket",
-        "Erweiterte Dashboards & Visualisierung",
-        "Benutzerdefinierte Metrik-Einrichtung",
-        "Compliance-Dokumentvorlagen",
-        "Prioritäts-E-Mail-Support",
-        "3 Benutzer-Lizenzen",
-        "30 Tage Geld-zurück-Garantie",
-        "Lebenslanger Zugang",
-        "Kostenlose Updates für 3 Jahre",
-        "1 Stunde Einrichtungsunterstützung"
+        "Everything from the Standard package",
+        "Advanced dashboards & visualization",
+        "Custom metric setup",
+        "Compliance document templates",
+        "Priority email support",
+        "3 user licenses",
+        "30-day money-back guarantee",
+        "Lifetime access",
+        "Free updates for 3 years",
+        "1 hour setup support"
       ],
       isPopular: true,
-      ctaText: "Premium kaufen",
+      ctaText: "Buy Premium",
     }
   ];
 
   const faqs = [
     {
-      question: "Wie lange habe ich Zugriff auf das Template?",
-      answer: "Nach dem Kauf haben Sie lebenslangen Zugriff auf das Template. Sie können es so oft Sie möchten herunterladen und auf Ihren Geräten installieren."
+      question: "How long do I have access to the template?",
+      answer: "After purchase, you have lifetime access to the template. You can download it and install it on your devices as many times as you want."
     },
     {
-      question: "Kann ich das Template auf mehreren Geräten nutzen?",
-      answer: "Ja, abhängig vom gekauften Paket. Das Standard-Paket erlaubt 1 Benutzer, das Premium-Paket erlaubt 3 Benutzer."
+      question: "Can I use the template on multiple devices?",
+      answer: "Yes, depending on the package purchased. The Standard package allows 1 user, the Premium package allows 3 users."
     },
     {
-      question: "Bieten Sie Unterstützung bei der Einrichtung an?",
-      answer: "Das Premium-Paket beinhaltet 1 Stunde Einrichtungsunterstützung. Für das Standard-Paket bieten wir E-Mail-Support für grundlegende Fragen."
+      question: "Do you offer setup support?",
+      answer: "The Premium package includes 1 hour of setup support. For the Standard package, we offer email support for basic questions."
     },
     {
-      question: "Gibt es eine Geld-zurück-Garantie?",
-      answer: "Ja, wir bieten eine 30-Tage-Geld-zurück-Garantie für beide Pakete. Wenn Sie mit dem Template nicht zufrieden sind, erstatten wir Ihnen den vollen Kaufpreis."
+      question: "Is there a money-back guarantee?",
+      answer: "Yes, we offer a 30-day money-back guarantee for both packages. If you're not satisfied with the template, we'll refund the full purchase price."
     },
     {
-      question: "Wie erhalte ich Updates für das Template?",
-      answer: "Updates werden automatisch in Ihrer Notion-Umgebung verfügbar gemacht. Standard-Benutzer erhalten 1 Jahr kostenlose Updates, Premium-Benutzer 3 Jahre."
+      question: "How do I receive updates for the template?",
+      answer: "Updates are automatically made available in your Notion environment. Standard users receive 1 year of free updates, Premium users receive 3 years."
     }
   ];
 
@@ -76,9 +76,9 @@ const PricingPage = () => {
         {/* Hero section */}
         <section className="bg-secondary py-20">
           <div className="container mx-auto px-4 sm:px-6 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Wählen Sie Ihr VSME-Reporting Paket</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Choose Your VSME Reporting Package</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Unsere Notion-Templates bieten eine umfassende Lösung für Ihr VSME-Reporting zu einem einmaligen Preis
+              Our Notion templates provide a comprehensive solution for your VSME reporting at a one-time price
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ const PricingPage = () => {
                   <div className="p-8 bg-card">
                     {plan.isPopular && (
                       <div className="bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider rounded-full px-3 py-1 inline-block mb-4">
-                        Meistverkauft
+                        Best Seller
                       </div>
                     )}
                     <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
@@ -107,7 +107,7 @@ const PricingPage = () => {
                     <div className="flex items-baseline gap-2 mb-6">
                       <DollarSign className="h-6 w-6 text-primary" />
                       <span className="text-4xl font-bold">€{plan.price}</span>
-                      <span className="text-muted-foreground">einmalig</span>
+                      <span className="text-muted-foreground">one-time</span>
                     </div>
                     
                     <Link to="/checkout">
@@ -123,7 +123,7 @@ const PricingPage = () => {
                   
                   <CardContent className="p-0">
                     <div className="bg-muted/30 p-8">
-                      <h3 className="font-medium mb-4 text-lg">Was ist enthalten:</h3>
+                      <h3 className="font-medium mb-4 text-lg">What's included:</h3>
                       <ul className="space-y-3">
                         {plan.features.map((feature, i) => (
                           <li key={i} className="flex items-start gap-3">
@@ -143,47 +143,47 @@ const PricingPage = () => {
         {/* Comparison section */}
         <section className="py-16 bg-secondary/50">
           <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl font-bold mb-12 text-center">Paketvergleich</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Package Comparison</h2>
             
             <div className="overflow-x-auto">
               <table className="w-full max-w-4xl mx-auto">
                 <thead>
                   <tr className="border-b">
-                    <th className="py-4 px-6 text-left">Funktion</th>
+                    <th className="py-4 px-6 text-left">Feature</th>
                     <th className="py-4 px-6 text-center">Standard</th>
                     <th className="py-4 px-6 text-center">Premium</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b">
-                    <td className="py-4 px-6">Preis</td>
-                    <td className="py-4 px-6 text-center font-semibold">€49 einmalig</td>
-                    <td className="py-4 px-6 text-center font-semibold">€89 einmalig</td>
+                    <td className="py-4 px-6">Price</td>
+                    <td className="py-4 px-6 text-center font-semibold">€49 one-time</td>
+                    <td className="py-4 px-6 text-center font-semibold">€89 one-time</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-4 px-6">Benutzerlizenzen</td>
+                    <td className="py-4 px-6">User licenses</td>
                     <td className="py-4 px-6 text-center">1</td>
                     <td className="py-4 px-6 text-center">3</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-4 px-6">VSME-Reporting Templates</td>
+                    <td className="py-4 px-6">VSME Reporting Templates</td>
                     <td className="py-4 px-6 text-center">Standard</td>
-                    <td className="py-4 px-6 text-center">Erweitert</td>
+                    <td className="py-4 px-6 text-center">Advanced</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-4 px-6">Dashboards</td>
-                    <td className="py-4 px-6 text-center">Grundlegend</td>
-                    <td className="py-4 px-6 text-center">Erweitert</td>
+                    <td className="py-4 px-6 text-center">Basic</td>
+                    <td className="py-4 px-6 text-center">Advanced</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-4 px-6">Einrichtungsunterstützung</td>
+                    <td className="py-4 px-6">Setup Support</td>
                     <td className="py-4 px-6 text-center">-</td>
-                    <td className="py-4 px-6 text-center">1 Stunde</td>
+                    <td className="py-4 px-6 text-center">1 hour</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-4 px-6">Kostenlose Updates</td>
-                    <td className="py-4 px-6 text-center">1 Jahr</td>
-                    <td className="py-4 px-6 text-center">3 Jahre</td>
+                    <td className="py-4 px-6">Free Updates</td>
+                    <td className="py-4 px-6 text-center">1 year</td>
+                    <td className="py-4 px-6 text-center">3 years</td>
                   </tr>
                 </tbody>
               </table>
@@ -194,7 +194,7 @@ const PricingPage = () => {
         {/* FAQ section */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl font-bold mb-12 text-center">Häufig gestellte Fragen</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
             
             <div className="max-w-3xl mx-auto space-y-6">
               {faqs.map((faq, index) => (
@@ -210,9 +210,9 @@ const PricingPage = () => {
         {/* CTA section */}
         <section className="py-16 bg-primary text-white">
           <div className="container mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6">Bereit, Ihr VSME-Reporting zu verbessern?</h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to improve your VSME reporting?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-              Wählen Sie jetzt das für Sie passende Paket und starten Sie mit effizientem ESG-Reporting
+              Choose the package that's right for you now and start with efficient ESG reporting
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/checkout">
@@ -221,12 +221,12 @@ const PricingPage = () => {
                   variant="outline" 
                   className="border-white text-white hover:bg-white hover:text-primary"
                 >
-                  Template kaufen
+                  Buy Template
                 </Button>
               </Link>
               <Link to="/product">
                 <Button size="lg" variant="secondary" className="text-primary">
-                  Mehr erfahren
+                  Learn More
                 </Button>
               </Link>
             </div>
@@ -238,4 +238,3 @@ const PricingPage = () => {
   );
 };
 export default PricingPage;
-

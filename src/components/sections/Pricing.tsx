@@ -11,14 +11,14 @@ const Pricing = () => {
       description: "Perfect for small businesses just starting with VSME reporting",
       price: 89,
       features: [
-        "Komplettes VSME-Reporting Template",
-        "Grundlegende Dashboards",
-        "Standard Metrik-Tracking",
-        "E-Mail Support",
-        "1 Benutzer-Lizenz",
+        "Complete VSME reporting template",
+        "Basic dashboards",
+        "Standard metric tracking",
+        "Email support",
+        "1 user license",
       ],
       isPopular: false,
-      ctaText: "Jetzt kaufen",
+      ctaText: "Buy Now",
     },
     {
 
@@ -26,15 +26,15 @@ const Pricing = () => {
       description: "Ideal for growing companies seeking comprehensive VSME solutions",
       price: 149,
       features: [
-        "Alles aus dem Standard-Paket",
-        "Erweiterte Dashboards & Visualisierung",
-        "Benutzerdefinierte Metrik-Einrichtung",
-        "Compliance-Dokumentvorlagen",
-        "Prioritäts-E-Mail-Support",
-        "3 Benutzer-Lizenzen",
+        "Everything from the Standard package",
+        "Advanced dashboards & visualization",
+        "Custom metric setup",
+        "Compliance document templates",
+        "Priority email support",
+        "3 user licenses",
       ],
       isPopular: true,
-      ctaText: "Premium kaufen",
+      ctaText: "Buy Premium",
     }
   ];
 
@@ -51,7 +51,7 @@ const Pricing = () => {
           </p>
           <Link to="/pricing">
             <Button variant="outline" className="rounded-lg">
-              Alle Details anzeigen
+              View All Details
             </Button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const Pricing = () => {
               <div className="bg-white p-8">
                 {plan.isPopular && (
                   <div className="bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider rounded-full px-3 py-1 inline-block mb-4">
-                    Meistverkauft
+                    Best Seller
                   </div>
                 )}
                 <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
@@ -92,7 +92,7 @@ const Pricing = () => {
               </div>
               
               <div className="bg-gray-50 p-8">
-                <h4 className="font-medium mb-4">Was ist enthalten:</h4>
+                <h4 className="font-medium mb-4">What's included:</h4>
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -108,10 +108,10 @@ const Pricing = () => {
         
         <div className="mt-16 lg:mt-20 text-center">
           <p className="text-muted-foreground mb-6">
-            Sie haben noch Fragen?
+            Have questions?
           </p>
           <Button variant="outline" className="rounded-full px-8">
-            Kontaktieren Sie uns
+            Contact Us
           </Button>
         </div>
       </div>
