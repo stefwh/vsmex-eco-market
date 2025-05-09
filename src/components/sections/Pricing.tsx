@@ -21,7 +21,6 @@ const Pricing = () => {
       ctaText: "Buy Now",
     },
     {
-
       name: "Extended",
       description: "Ideal for growing companies seeking comprehensive VSME solutions",
       price: 149,
