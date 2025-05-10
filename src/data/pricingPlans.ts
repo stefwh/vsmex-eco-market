@@ -10,37 +10,34 @@ export interface PricingPlan {
 
 export const pricingPlans: PricingPlan[] = [
   {
-    name: "Standard",
+    name: "Basic",
     description: "Our base template for VSME reporting, perfect for beginners",
-    price: 49,
+    price: 99,
     features: [
       "Complete VSME reporting template",
       "Basic dashboards",
       "Standard metric tracking",
       "Email support",
-      "1 user license",
       "30-day money-back guarantee",
       "Lifetime access",
-      "Free updates for 1 year"
+      "Video tutorial"
     ],
     isPopular: false,
     ctaText: "Buy Now",
   },
   {
-    name: "Premium",
+    name: "Extended",
     description: "Comprehensive template with advanced features for professional VSME reporting",
-    price: 89,
+    price: 179,
     features: [
       "Everything from the Standard package",
       "Advanced dashboards & visualization",
       "Custom metric setup",
       "Compliance document templates",
       "Priority email support",
-      "3 user licenses",
       "30-day money-back guarantee",
       "Lifetime access",
-      "Free updates for 3 years",
-      "1 hour setup support"
+      "Video tutorial"
     ],
     isPopular: true,
     ctaText: "Buy Premium",
@@ -49,23 +46,15 @@ export const pricingPlans: PricingPlan[] = [
 
 export const faqs = [
   {
-    question: "How long do I have access to the template?",
-    answer: "After purchase, you have lifetime access to the template. You can download it and install it on your devices as many times as you want."
+    question: "How do I access the template after purchase?",
+    answer: "After purchase, you'll receive a link to duplicate the template into your own Notion workspace. Once duplicated, it's yours to keep forever.",
   },
   {
-    question: "Can I use the template on multiple devices?",
-    answer: "Yes, depending on the package purchased. The Standard package allows 1 user, the Premium package allows 3 users."
-  },
-  {
-    question: "Do you offer setup support?",
-    answer: "The Premium package includes 1 hour of setup support. For the Standard package, we offer email support for basic questions."
+  question: "Can I use the template on multiple devices or share it with others?",
+  answer: "Yes — you're welcome to invite colleagues from your company to collaborate within your Notion workspace. The template is licensed for internal company use only. Sharing outside your organization is not permitted.",
   },
   {
     question: "Is there a money-back guarantee?",
-    answer: "Yes, we offer a 30-day money-back guarantee for both packages. If you're not satisfied with the template, we'll refund the full purchase price."
-  },
-  {
-    question: "How do I receive updates for the template?",
-    answer: "Updates are automatically made available in your Notion environment. Standard users receive 1 year of free updates, Premium users receive 3 years."
+    answer: "Yes. We offer a 30-day money-back guarantee. If you're not satisfied with the template, just contact us and we’ll issue a full refund.",
   }
 ];

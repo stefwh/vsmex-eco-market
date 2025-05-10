@@ -36,7 +36,6 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
         <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
         <p className="text-muted-foreground mb-6">{plan.description}</p>
         <div className="flex items-baseline gap-2 mb-6">
-          <DollarSign className="h-6 w-6 text-primary" />
           <span className="text-4xl font-bold">€{plan.price}</span>
           <span className="text-muted-foreground">one-time</span>
         </div>
